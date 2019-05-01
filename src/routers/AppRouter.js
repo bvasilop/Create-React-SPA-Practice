@@ -4,8 +4,6 @@ import Contact from '../components/Contact';
 import Home from '../components/Home';
 import PortfolioPage from '../components/PortfolioPage';
 import Item from '../components/Item';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import NotFoundPage from '../components/NotFoundPage';
 import Layout from '../components/Layout'
 
