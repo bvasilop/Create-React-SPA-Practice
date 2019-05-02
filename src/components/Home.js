@@ -1,13 +1,21 @@
 import React from 'react';
 import '../styles/index.scss';
 
-const Home = () => (
+const Home = (props) => (
 
 		<div>
-			<h1>Welcome</h1>
-			<p>This is my site. Take a look around</p>
+			<h1>
+            {props.title}
+            </h1>
+			<p>
+            {props.content}
+            </p>
 		</div>
 
 );
+Home.defaultProps = { // using default props
+    title: 'Welcome',
+    content: 'This is my site. Take a look around'
+};
 
 export default Home;

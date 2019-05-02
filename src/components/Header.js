@@ -7,10 +7,10 @@ const Header = (props) => (
 	<header className={headerStyles.header}>
 
             <h1>
-						<Link className={headerStyles.title}to="/">
-							{props.title}
-						</Link>
-						</h1>
+                <Link className={headerStyles.title}to="/">
+                    {props.title}
+                </Link>
+                </h1>
                 {/* {props.subtitle && <h2 className="header__subtitle">{props.subtitle}</h2>} */}
 						<nav>
             <ul className={headerStyles.navList}>
@@ -21,7 +21,7 @@ const Header = (props) => (
                     <NavLink className={headerStyles.navItem} to="/portfolio" activeClassName={headerStyles.activeNavItem} exact={true}>Portfolio</NavLink>
                 </li>
                 <li>
-                    <NavLink className={headerStyles.navItem} to="/contact" activeClassName={headerStyles.activeNavItem} >Contact</NavLink>
+                    <NavLink className={headerStyles.navItem} to="/contact" activeClassName={headerStyles.activeNavItem}>Contact</NavLink>
                 </li>
             </ul>
         </nav>
@@ -29,7 +29,7 @@ const Header = (props) => (
 );
 
 Header.defaultProps = { // using default props
-	title: 'Portfolio'
+	title: 'React Practice SPA'
 };
 
 export default Header;

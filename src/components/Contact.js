@@ -1,14 +1,13 @@
 import React from 'react';
 import '../styles/index.scss';
+import contactStyles from './contact.module.scss';
 
-
-const Contact = () => {
-    return (
-        <div>
-            <h1>Contact</h1>
-            <p>If you are interested in connecting with me about other projects, I'd love to hear from you!</p>
-            <h2>Contact Info:</h2>
-            <ul className="contacts">
+const Contact = (props) =>  (
+        <div className={contactStyles.content}>
+            <h1>{props.title}</h1>
+            <p>{props.content}</p>
+            <h2>{props.subtitle}</h2>
+            <ul className={contactStyles.contacts}>
                 <li >
                     <a href="mailto:bvasilop@gmail.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="Send me an Email!">
                         bvasilop@gmail.com
@@ -22,6 +21,12 @@ const Contact = () => {
             </ul>
 
         </div>
-    )
+)
+Contact.defaultProps = { // using default props
+    title: 'Contact',
+    subtitle: 'Contact Info:',
+    content: `If you are interested in connecting with me about other projects, I'd love to hear from you!`
 };
+
+
 export default Contact;

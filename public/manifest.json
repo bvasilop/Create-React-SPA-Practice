@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React Practice SPA",
+  "name": "Create React App Single Page Application",
   "icons": [
     {
       "src": "favicon.ico",

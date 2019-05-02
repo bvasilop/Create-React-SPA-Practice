@@ -9,17 +9,15 @@ import Layout from '../components/Layout'
 
 const AppRouter = () => (
 	<BrowserRouter>
-		<div>
-			<Layout>
-		<Switch>
-		  <Route path="/" component={Home} exact={true} />
-			<Route path="/portfolio/" component={PortfolioPage} exact={true} />
-			<Route path="/portfolio/:id" component={Item} />
-			<Route path="/contact" component={Contact} />
-			<Route component={NotFoundPage} />
-		</Switch>
+		<Layout>
+            <Switch>
+            <Route path="/" component={Home} exact={true} />
+                <Route path="/portfolio/" component={PortfolioPage} exact={true} />
+                <Route path="/portfolio/:id" component={Item} />
+                <Route path="/contact" component={Contact} />
+                <Route component={NotFoundPage} />
+            </Switch>
         </Layout>
-	</div>
 	</BrowserRouter>
 );
 
