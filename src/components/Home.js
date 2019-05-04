@@ -3,14 +3,14 @@ import '../styles/index.scss';
 
 const Home = (props) => (
 
-		<div>
-			<h1>
+    <div>
+        <h1>
             {props.title}
-            </h1>
-			<p>
+        </h1>
+        <p>
             {props.content}
-            </p>
-		</div>
+        </p>
+    </div>
 
 );
 Home.defaultProps = { // using default props

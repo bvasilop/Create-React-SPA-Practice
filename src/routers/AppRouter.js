@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Contact from '../components/Contact';
 import Home from '../components/Home';
 import PortfolioPage from '../components/PortfolioPage';
@@ -8,17 +8,17 @@ import NotFoundPage from '../components/NotFoundPage';
 import Layout from '../components/Layout'
 
 const AppRouter = () => (
-	<BrowserRouter>
-		<Layout>
+    <BrowserRouter>
+        <Layout>
             <Switch>
-            <Route path="/" component={Home} exact={true} />
-                <Route path="/portfolio/" component={PortfolioPage} exact={true} />
-                <Route path="/portfolio/:id" component={Item} />
-                <Route path="/contact" component={Contact} />
-                <Route component={NotFoundPage} />
+                <Route path="/" component={Home} exact={true}/>
+                <Route path="/portfolio/" component={PortfolioPage} exact={true}/>
+                <Route path="/portfolio/:id" component={Item}/>
+                <Route path="/contact" component={Contact}/>
+                <Route component={NotFoundPage}/>
             </Switch>
         </Layout>
-	</BrowserRouter>
+    </BrowserRouter>
 );
 
 export default AppRouter;

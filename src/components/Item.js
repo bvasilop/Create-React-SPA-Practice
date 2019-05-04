@@ -2,17 +2,17 @@ import React from 'react';
 import '../styles/index.scss';
 
 const Item = (props) => {
-	console.log(props);
-	return (
-		<div className="content-container">
-			<h1>
-            {props.title}
+    console.log(props);
+    return (
+        <div className="content-container">
+            <h1>
+                {props.title}
             </h1>
-				<p>
+            <p>
                 {props.description}
                 {props.match.params.id}
-                </p>
-		</div>
+            </p>
+        </div>
     );
 };
 Item.defaultProps = {

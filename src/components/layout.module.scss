@@ -1,4 +1,18 @@
+body {
+  //   background: url('/images/mountain.jpg');
+  background: #dfe9ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #0b0909, #dfe9ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #0b0909, #dfe9ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+
+  @media (min-width: 22rem) {
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
 
 .container {
   margin: 0 auto;
@@ -8,16 +22,19 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
 .content {
   flex-grow: 1;
 }
+
 h1 {
   @media (min-width: 22rem) {
-      font-size: 1.65rem;
+    font-size: 1.65rem;
   }
 }
+
 h2 {
   @media (min-width: 22rem) {
-      font-size: 1.45rem;
+    font-size: 1.45rem;
   }
 }
