@@ -10,8 +10,9 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.cs]
+[*.{css,scss}]
 csharp_new_line_before_open_brace = none
+indent_style = spaces
 indent_size = 2
 
 [*.json]
