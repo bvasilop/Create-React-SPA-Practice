@@ -1,4 +1,6 @@
-# This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+ [Project deployed here](https://flamboyant-keller-f7e6c5.netlify.com/)
 
 ## Available Scripts
 
